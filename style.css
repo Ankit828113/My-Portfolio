@@ -327,6 +327,25 @@ ul li a:hover{
     padding: 0;
 }
 
+@media only screen and (max-width : 1090px){
+    .hero img{ 
+        position: relative;
+        height: 180px;
+        width: 180px;
+        top: 120px;
+    }
+    .content{
+        top:110px;
+    }
+    .icons>h2{
+        font-size: 25px;
+        padding: 6px 15px;
+        font-weight: 300;
+    }
+    .icons{
+        top: 120px;
+    }
+  }
 
 @media only screen and (max-width : 800px){
   .nav li{
@@ -335,28 +354,15 @@ ul li a:hover{
 }
 
 
-@media only screen and (max-width : 720px){ 
+@media only screen and (max-width : 640px){ 
     body{
         width: 100vmax;
       }
-    /* .nav ul{
-        display: none;
+      .content h3{
+        font-size: 20px;
+        font-weight:200;
+        width: 100vmax;
     }
-    .nav h1{
-        padding: 8px 10px;
-    }
-    .hero img{ 
-        position: relative;
-        height: 160px;
-        width: 160px;
-        top: 115px;
-    }
-    .content{
-        top:111px;
-    }
-    .icons{
-        top:114px;  
-    } */
     .projects{
         flex-wrap: wrap;
         width: 80%;
@@ -413,160 +419,3 @@ ul li a:hover{
 
 
 
-
-
-
-/* 
-
-@media only screen and (max-width: 822px) {
-    
-    .bar{
-        display: flex;
-        left: 85%;
-        top: 20px;
-        padding-right: 10px;
-        position: fixed;
-        color: #fff;
-        z-index: 20;
-        font-size: 60px;
-        align-items: center;
-    }
-    .nav li{
-        display: none;
-    }
-    .banner{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-@media only screen and (min-width: 360px) and (max-width:500px){
-    .bar{
-        display: flex;
-        justify-content: space-between;
-       
-        padding-right: 10px;
-        color: #fff;
-        z-index: 20;
-        font-size: 60px;
-        align-items: center;
-    }
-    .main{
-        width: 148%;
-        height: 900px;
-    }
-    .icons{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-    .nav li{
-        display: none;
-    }
-   
-    .banner{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .aboutme{
-        width: 136vw;
-        margin: 0 20px;
-    }
-    
-    .projects{
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        width: 100vw;
-        margin: 0 17%;
-    }
-    
-    .shift1{
-        order: 1;
-    }
-    .shift{
-        order: 2;
-    }
-    .contacts{
-    width: 111%;
-    margin: 0 18%;
-}
-}
-
-@media only screen and (max-width:360px){
-    .bar{
-        display: flex;  
-        justify-content: space-between;
-        top: 20px;
-        color: #fff;
-        z-index: 20;
-        font-size: 60px;
-        align-items: center;
-    }
-    .main{
-        width: 200%;
-        height: 900px;
-       
-    }
-    .icons{
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-    }
-    .nav li{
-        display: none;
-    }
-    .container2{
-        text-align: center;
-    }
-    .hero1{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .hero img{ 
-        position: relative;
-        height: 250px;
-        width: 250px;
-        border: 1px solid aqua;
-        border-radius: 50%;
-        box-shadow: 0 0 16px 1px aqua;
-    }
-    .banner{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .aboutme{
-        width: 180vw;
-        margin: 0 20px;
-    }
-    .projects{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 113%;
-        margin: 0 17%;
-    }
-    .section1{
-        width: 100%;
-        padding: 20px;
-    }
-    
-    .section2{
-       width: 100%;
-        padding: 20px;
-    }
-    .shift1{
-        order: 1;
-    }
-    .shift{
-        order: 2;
-    }
-    .contacts{
-    width: 111%;
-    margin: 0 18%;
-}
-} */
