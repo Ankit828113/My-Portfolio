@@ -5,174 +5,241 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-       <div class="nav">
-        <h1>&lt;/&gt;</h1>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Project</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-       </div>
+    <!-- HEADER DESIGN-->
+     <header class="header">
+        <a href="#" class="logo">Portfolio</a>
 
-<div class="main">
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
 
-        <div class="bar">
-        <i class="fa-solid fa-bars"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#service">Service</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#skill">Skill</a>
+            <a href="#contact">Contact</a>
+        </nav>
+     </header>
+
+      <!-- HEADER DESIGN-->
+       <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hi, Myself</h3>
+            <h1>Ankit Kumar</h1>
+            <h3>And I'm a <span>Frontend Developer</span></h3>
+            <p>Welcome to my web developer portfolio. I'm Ankit, a skilled and creative web developer with a passion for creating beautiful responsive and user-friently websites. i've Worked on a variety of web projects ranging from personal blogs to e-commerce platforms.</p>
+            <div class="social-media">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <a href="#" class="btn">Download CV</a>
+            </div>
+            <div class="home-img">
+                <img src="home_img-blxQeR4N.jpg" alt="img">
+            </div>
+       </section>
+
+       <!--ABOUT SECTION DESIGN-->
+       <section class="about" id="about">
+        <div class="about-img">
+            <img src="home_img-blxQeR4N.jpg" alt="Profile Pic">
         </div>
-
-       <div class="hero">
-
-       <div class="image">
-           <img src="home_img-blxQeR4N.jpg" alt="img">
-       </div>
-
-       <div class="content">
-           <h1>  Hi, I am <span>Ankit</span></h1>
-           <h3>A Front-end developer based in Jharkhand, India</h3>
-       </div>
-
-       <div class="icons">
-           <h2>My Project <i class="fa-solid fa-arrow-right"></i></h2>
-       <div>
-        <span><a href="https://www.linkedin.com/in/ankit-kumar-595337217/" target="_blank"><i class="fa-brands fa-linkedin "style="color: #ffffff;"></i></a></span>
-        <span><a href="https://github.com/Ankit828113" target="_blank"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a></i></span>
-       </div>
-       </div>
-
-</div>
-</div>
-
-  <section class="aboutme">
-      <h1>About Me</h1>
-      <h2> I'm a 4th year b.tech undergraduate currently pursuing CSE from Ramgarh Engineering College, I'm aenthusiastic and
-      self-motivated front-end developer with a passion for creating
-      innovative web applications. By continually honing my skills and
-      staying updated with the latest industry trends, I strive to
-      deliver top-notch solutions and provide the best possible user
-      experience in my projects.</h2>
-  </section>
-
-      <div class="container1">
-        <h1>My Project</h1>
-
-      <div class="projects">
-        <div class="section1 shift1">
-           <h2>Netflix</h2>
-           <i class="fa-solid fa-link"></i>
-           <i class="fa-brands fa-github"></i>
-           <p>A Netflix clone is a video streaming app solution that allows you to launch your own OTT platform. It broadcasts TV shows and movies over the internet.</p>
-           <div class="language">
-           <span>HTML</span>
-           <span>CSS</span>
-           <span>JavaScript</span>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Frontend Developer</h3>
+            <p> I'm a 4th year b.tech undergraduate currently pursuing CSE from Ramgarh Engineering College, I'm aenthusiastic and
+                self-motivated front-end developer with a passion for creating
+                innovative web applications. By continually honing my skills and
+                staying updated with the latest industry trends, I strive to
+                deliver top-notch solutions and provide the best possible user
+                experience in my projects.
+            </p>
+            <a href="#" class="btn">Read more</a>
         </div>
-        </div>
-        <div class="section2 shift2">
-            <img src="netflix.png" alt="netflix">
-        </div>
-      </div>
+       </section>
 
-      <div class="projects">
-       <div class="section2">
-       <img src="cardekho.png" alt="cardekho">
-      </div>
-<div class="section1">
-    <h2>Car Dekho</h2>
-    <i class="fa-solid fa-link"></i>
-    <i class="fa-brands fa-github"></i>
-    <p>CarDekho is a website that offers new and used cars for sale. You can use CarDekho to buy cars, sell cars, compare cars, and view car visual stories.</p>
-    <div class="language">
-    <span>HTML</span>
-    <span>CSS</span>
-    <span>JavaScript</span>
-    </div>
- </div>
-</div>
-</div>
+        <!--SERVICE SECTION DESIGN-->
+        <section class="services" id="service">
+            <h2 class="heading">My<span>Services</span></h2>
+            <div class="services-container">
+                <div class="services-box">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quae, nesciunt aperiam amet id exercitationem est nobis excepturi modi saepe facere vitae, ut molestias pariatur?</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
 
+                <div class="services-box">
+                    <i class="fa-solid fa-palette"></i>
 
+                    <h3>UI/UX Designing</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quae, nesciunt aperiam amet id exercitationem est nobis excepturi modi saepe facere vitae, ut molestias pariatur?</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
 
+                <div class="services-box">
+                   <i class="fa-brands fa-android"></i>
+                    <h3>App Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quae, nesciunt aperiam amet id exercitationem est nobis excepturi modi saepe facere vitae, ut molestias pariatur?</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+        </section>
 
-<div class="contacts">
-<h1>Contact Me</h1>
-<p>Feel free to reach out to me at ankitkumar10658@gmail.com directly or through this form</p>
+        <!--SERVICE SECTION DESIGN-->
+        <section class="portfolio" id="portfolio">
+            <h2 class="heading">Latest<span>Projects</span></h2>
 
+            <div class="portfolio-container">
+                <div class="portfolio-box">
+                    <img src="1.jpg" alt="1.image">
+                    <div class="portfolio-layer">
 
-<div class="inputs">
-  <h2>Email Me</h2>
-  <input class="input-types" type="text" placeholder="Your Name">
-  <input class="input-types" type="email" placeholder="Your Email">
-  <input class="input-message" type="text" placeholder="Your Message">
-  <button class="submit"  type="submit">Send</button>
-</div>
-</div>
+                        <h4>Web Design</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <i class="fa-solid fa-share-from-square"></i>
+                    </div>
+                </div>
 
-<div class="footer">
-  <h2>Ankit's Portfolio</h2>
-  <p>©2024 Ankit Kumar. All rights reserved.</p>
-</div>
+                <div class="portfolio-box">
+                    <img src="2.jpg" alt="1.image">
+                    <div class="portfolio-layer">
 
+                        <h4>Web Design</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <i class="fa-solid fa-share-from-square"></i>
+                    </div>
+                </div>
 
-<!-- 
-<h1 class="sub-title">
-  My <span>Skills</span>
-</h1>
+                <div class="portfolio-box">
+                    <img src="3.jpg" alt="1.image">
+                    <div class="portfolio-layer">
 
-<section>
-  <div class="container3" id="skills">
-    <h1 class="heading">Technical Skills</h1>
-    <div class="technical-bars">
-      <div class="bar"><i class="fa-brands fa-html5"></i></div>
-      <div class="info">
+                        <h4>Web Design</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <i class="fa-solid fa-share-from-square"></i>
+                    </div>
+                </div>
 
-      </div>
-      <div class="progress-line html">
-        <span></span>
-      </div>
-    </div>
+                <div class="portfolio-box">
+                    <img src="4.jpg" alt="1.image">
+                    <div class="portfolio-layer">
 
-    <div class="bar"><i class="fa-brands fa-html5"></i></div>
-      <div class="info">
+                        <h4>Web Design</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <i class="fa-solid fa-share-from-square"></i>
+                    </div>
+                </div>
 
-      </div>
-      <div class="progress-line html">
-        <span></span>
-      </div>
-    </div>
+                <div class="portfolio-box">
+                    <img src="5.jpg" alt="1.image">
+                    <div class="portfolio-layer">
 
-    <div class="bar"><i class="fa-brands fa-html5"></i></div>
-      <div class="info">
+                        <h4>Web Design</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <i class="fa-solid fa-share-from-square"></i>
+                    </div>
+                </div>
 
-      </div>
-      <div class="progress-line html">
-        <span></span>
-      </div>
-    </div>
+                <div class="portfolio-box">
+                    <img src="6.jpg" alt="1.image">
+                    <div class="portfolio-layer">
 
-    <div class="bar"><i class="fa-brands fa-html5"></i></div>
-      <div class="info">
+                        <h4>Web Design</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <i class="fa-solid fa-share-from-square"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      </div>
-      <div class="progress-line html">
-        <span></span>
-      </div>
-    </div>
+        <!--SKILLS SECTION DESIGN--> 
+         <section class="skills" id="skill">
+                <h2 class="heading">My<span>Skills</span></h2>
+            
+            <div class="skill-main">
+                    <div class="skill-bar">
+                        <div class="info">
+                            <p>HTML</p>
+                            <p>70%</p>
+                        </div>
+                        <div class="bar">
+                            <span class="html"></span>
+                        </div>
+                    </div>
 
-    <div class="bar"><i class="fa-brands fa-html5"></i></div>
-      <div class="info">
+                    <div class="skill-bar">
+                        <div class="info">
+                            <p>CSS</p>
+                            <p>72%</p>
+                        </div>
+                        <div class="bar">
+                            <span class="css"></span>
+                        </div>
+                    </div>
 
-      </div>
-      <div class="progress-line html">
-        <span></span>
-      </div>
-    </div>
-  </div>
-</section> -->
+                    <div class="skill-bar">
+                        <div class="info">
+                            <p>JAVASCRIPT</p>
+                            <p>90%</p>
+                        </div>
+                        <div class="bar">
+                            <span class="javascript"></span>
+                        </div>
+                    </div>
 
+                    <div class="skill-bar">
+                        <div class="info">
+                            <p>PYTHON</p>
+                            <p>80%</p>
+                        </div>
+                        <div class="bar">
+                            <span class="python"></span>
+                        </div>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div class="info">
+                            <p>REACT</p>
+                            <p>62%</p>
+                        </div>
+                        <div class="bar">
+                            <span class="react"></span>
+                        </div>
+                    
+            </div>
+            </div>
+         </section>
+
+        <!--CONTACT SECTION DESIGN-->
+        <section class="contact" id="contact">
+            <h2 class="heading">Contact<span>Me</span></h2>
+
+            <form action="#">
+                <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+            </form>
+        </section>
+
+          <!--FOOTER DESIGN-->
+          <footer class="footer">
+            <div class="footer-text">
+                <p>copyright &copy; 2024 by @ankitkumar | All Rights Reserved.</p>
+            </div>
+          </footer>
 </body>
-</html>
+                </html>
