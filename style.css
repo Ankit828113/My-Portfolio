@@ -4,17 +4,17 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    border: none;
-    outline: none;
     scroll-behavior: smooth;
-    font-family: 'nunito',sans-serif;
+    border: none;
+    font-family: sans-serif;
+    outline: none;
 }
 
 :root{
-    --bg-color:rgb(120, 94, 214);
-    --snd-bg-color:rgb(96, 10, 255);
+    --bg-color:rgb(112, 78, 235);
+    --second-bg-color:rgb(151, 135, 221);
     --text-color:#fff;
-    --main-color:rgb(238, 255, 2) ;
+    --main-color:rgb(2, 255, 23) ;
 }
 
 html{
@@ -27,6 +27,8 @@ body{
     color: var(--text-color);
 }
 
+
+
 section{
     min-height: 100vh;
     padding: 10rem 9% 2rem;
@@ -38,7 +40,7 @@ section{
     left: 0;
     width: 100%;
     padding: 2rem 9%;
-    background: var(--bg-color);
+    background-color: rgb(68, 50, 168);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -63,6 +65,49 @@ section{
 .navbar a.active {
     color: var(--main-color);
 }
+
+
+
+.mode input{
+    display: none;
+}
+
+.mode label{
+    position: relative;
+    display: block;
+    width: 10rem;
+    height: 5rem;
+    background: #5f635e;
+    border-radius: 2.5rem;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+.mode label:before{
+    position: absolute;
+    top: 50%;
+    left: .5rem;
+    transform: translateY(-50%);
+    content: "";
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    background: #000000f3;
+    border-radius: 50%;
+    transition: left .3s linear;
+}
+.mode input:checked + label{
+    background: #4dff6b;
+}
+.mode input:checked + label:before{
+    left:55px;
+    background: #fff;
+}
+
+
+
+
+
 
 #menu-icon{
     font-size: 3.6rem;
@@ -114,22 +159,21 @@ span{
 }
 
 .home-content p{
-    font-size: 1.6rem;
+    font-size: 2.1rem;
 }
 
 .social-media a{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
     background: transparent;
     border: .2rem solid var(--main-color);
-    border-radius: 50%;
-    font-size: 2rem;
+    font-size: 3rem;
     color: var(--main-color);
-    margin: 3rem 1.5rem 3rem 0;
-    transition: .5s ease;
+    margin: 5rem 1.5rem 3rem 0;
+    transition: .3s ease;
 }
 
 .social-media a:hover{
@@ -143,7 +187,7 @@ span{
     padding: 1rem 2.8rem;
     background: var(--main-color);
     border-radius: 4rem;
-    box-shadow: 0 0 1rem var(--main-color);
+    box-shadow: 0 0 2rem .5rem var(--main-color);
     font-size: 1.6rem;
     color: var(--bg-color);
     letter-spacing: .1rem;
@@ -160,11 +204,12 @@ span{
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    background: var(--snd-bg-color);
+    background: var(--second-bg-color);
 }
 
 .about-img img{
     width: 35vw;
+    box-shadow: .5rem .5rem rgb(0, 255, 98), -.5rem -.5rem  rgb(0, 255, 98);
 }
 
 .heading{
@@ -182,7 +227,7 @@ span{
 }
 
 .about-content p{
-    font-size: 1.6rem;
+    font-size: 2.1rem;
     margin: 2rem 0 3rem;
 }
 
@@ -200,7 +245,7 @@ span{
 
 .services-container .services-box{
     flex: 1 1 30rem;
-    background: var(--snd-bg-color);
+    background: var(--second-bg-color);
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
     text-align: center;
@@ -223,12 +268,12 @@ span{
 }
 
 .services-box p{
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     margin: 1rem 0 3rem;
 }
 
 .portfolio{
-    background: var(--snd-bg-color);
+    background: var(--second-bg-color);
 }
 
 .portfolio h2{
@@ -252,6 +297,7 @@ span{
 
 .portfolio-box img{
     width: 100%;
+    height: 25rem;
     transition: .5s ease;
     opacity: 0.7;
 }
@@ -286,7 +332,8 @@ span{
 }
 
 .portfolio-layer p{
-    font-size: 1.6rem;
+    font-size: 2rem;
+    color: rgb(212, 0, 0);
 }
 
 .portfolio-layer a{
@@ -301,7 +348,7 @@ span{
 
 .portfolio-layer a i{
     font-size: 2rem;
-    color: var(--snd-bg-color);
+    color: var(--second-bg-color);
 }
 
 
@@ -332,7 +379,7 @@ span{
  .skill-bar .bar{
     width: 100%;
     height: 1.2rem;
-    background-color: var(--snd-bg-color);
+    background-color: var(--second-bg-color);
     border-radius: 2.5rem;
     margin-top: 1rem;
     position: relative;
@@ -426,7 +473,13 @@ box-shadow: 0 0 1rem yellow;
 
 
 .contact{
-    background: var(--snd-bg-color);
+    background: var(--second-bg-color);
+}
+
+.contact p{
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(233, 255, 107);
 }
 
 .contact h2{
@@ -469,7 +522,9 @@ box-shadow: 0 0 1rem yellow;
 }
 
 .contact form .btn{
-    margin-top: 2rem;
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: .8rem;
     cursor: pointer;
 }
 
@@ -479,7 +534,8 @@ box-shadow: 0 0 1rem yellow;
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background: var(--bg-color);
+    /* background: var(--bg-color); */
+    background-color: rgb(68, 50, 168);
 }
 
 .footer-text{
@@ -492,6 +548,15 @@ box-shadow: 0 0 1rem yellow;
 @media (max-width:1200px) {
     html{
         font-size: 55%;
+    }
+}
+
+@media (max-width:1200px){
+    .navbar{
+        display: none;
+    }
+    #menu-icon{
+        display: block;
     }
 }
 
@@ -516,12 +581,9 @@ box-shadow: 0 0 1rem yellow;
     }
 }
 
-@media (max-width:768px){
-    .navbar{
-        display: none;
-    }
-    #menu-icon{
-        display: block;
+@media (max-width:790px){
+    .mode input:checked + label:before{
+        left:5.5rem;
     }
     .home{
         flex-direction: column;
@@ -581,5 +643,16 @@ box-shadow: 0 0 1rem yellow;
     .footer{
         padding: 2rem 2%;
         text-align: center;
+    }
+    .mode label{
+        width: 8rem;
+        height: 4rem;
+    }
+    .mode input:checked + label:before{
+        left:4rem;
+    }
+    .mode label:before{
+        width: 3.5rem;
+        height: 3.5rem;
     }
 }
